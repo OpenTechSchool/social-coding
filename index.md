@@ -57,10 +57,11 @@ you want to share your source code and contribute to other projects.
 * [GitHub Explore](extras/github-explore.html)
 * [GitHub Wikis](extras/github-wiki.html)
 * [Code snippets with Gist](extras/github-gist.html)
-* [Hosting a website](extras/github-pages.html)
+* [Hosting static websites with GitHub Pages](extras/github-pages.html)
 * [Delete and restore all your files](extras/delete-restore.html)
 * [Delete and restore your local repository](extras/delete-restore-local-repository.html)
 * [Push to heroku FTW!](extras/push-to-heroku.html)
+* [Branches](extras/branches.html)
 * Add something amazing here
 
 # Reference material
