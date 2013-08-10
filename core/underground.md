@@ -192,7 +192,9 @@ completely overwritten all your changes and added a curse for your
 pets in the README file. Let's add another upstream to see what is
 happening:
 
-    $ git remote add upstream https://github.com/OpenTechSchool/underground
+{% highlight sh %}
+$ git remote add upstream https://github.com/OpenTechSchool/underground.git
+{% endhighlight %}
 
 This adds an upstream repository called `upstream`. Now we can
 `fetch` directly from the Oligarchs. This will download the
