@@ -46,7 +46,7 @@ and then follow the prompts to enter your email, password and SSH key (it should
 You're basically now ready to deploy your app to Heroku, so make sure you are in your app's directory and get ready for some magic.
 
 ### Cast spell?
-Well... almost, but we still need to do a few things. Heroku plays nice with most of the popular frameworks, so we'll just pick a [Ruby](https://devcenter.heroku.com/articles/ruby) based framework (e.g. [Sinatra](http://www.sinatrarb.com)) to illustrate how to deploy your app. We'll use a super barebone application called `app.rb` for our example, but you should use your exisitng web app and choose the appropriate parameters:
+Well... almost, but we still need to do a few things. Heroku plays nice with most of the popular frameworks, so we'll just pick a [Ruby](https://devcenter.heroku.com/articles/ruby) based framework (e.g. [Sinatra](http://www.sinatrarb.com)) to illustrate how to deploy your app. We'll use a super barebone application called `app.rb` for our example, but you should use your existing web app and choose the appropriate parameters:
 
 {% highlight ruby %}
 require 'sinatra'
