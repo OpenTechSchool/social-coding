@@ -12,12 +12,12 @@ been developed and maintained by OpenTechSchool.
 
 Welcome to social coding with GitHub! This course is intended to introduce
 beginners to the social side of programming. We'll be looking at one of the
-most popular sites for social programming: GitHub.
+most popular sites for social programming: [GitHub](http://github.com).
 
 We'll be using Git, a popular tool for storing and sharing source
 code. It's a tool that keeps a copy of your source code, but not just
-one copy. It keeps track of every version of every file in a repository. In addition
-we'll also use GitHub to host your Git repositories online for you.
+one copy. It keeps track of every version of every file in a repository.
+In addition we'll also use GitHub to host your Git repositories online for you.
 
 ## What we'll do today
 
