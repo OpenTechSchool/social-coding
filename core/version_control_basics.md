@@ -30,7 +30,7 @@ After you finish your project (and maybe release it to a wider audience) the mat
 But that is not the end of the story.
 
 Let's assume we have created a computer progam. As time goes on people discover bugs and ask for new fatures, request special versions and so on. 
-How do you keep track of these changes? Remove mistakes, bring old material forward into new versions, merge changes from one verwsion to another.
+How do you keep track of these changes? Remove mistakes, bring old material forward into new versions, merge changes from one version to another.
 
 As well as computer code your project might have other types of files. For example icons, project plans, setup scripts, research notes etc.,
 and losing all that information even when it's not part of the final project could be a disaster.
@@ -39,11 +39,12 @@ and losing all that information even when it's not part of the final project cou
 Now let's add another layer of complexity.
 
 Our project might be big enough that we are team working on the project together and we all make changes to the digital files (also called assets).
-That will introduce a lot of potential problems. For instance a developer may save their work and overwrite someone else's changes.
+That will introduce a lot of potential problems.
+If we all work on the same copy a developer will save their work and overwrite someone else's changes.
 
 #So how does Version Control help keep track of your work and digital assests?
 
-The way that a VCS works by recording a history of changes. What does that mean?
+A VCS works by recording a history of changes. What does that mean?
 
 Every time a change is completed (for example fixing a bug in a project) the developer decides a logical ''save''
 point has been reached and will store all the file changes that make up the fix in the VCS database.
@@ -75,21 +76,22 @@ and dozens of people working on the project making different types of changes.
 There are several problems that will happen:
 
 1. Two people might be editing the same file at once and changes can be overwritten
-1. After the project has been running for some time it's very hard to understand how the project has evolved and what changes have been made.
-How can we locate a problem that might have been introduced some time ago.
+1. After the project has been running for some time it's very hard to understand how the project has evolved and what changes have been made
+
+How can we locate a problem that might have been introduced some time ago?
 Just fixing the problem may not be enough, we probably also need to to understand the change that introduced it.
 1. If two people want to change the same file one will have to wait for the other to finish, this is very inefficient
-1. If two people people are making (long running) changes to the project it may take some time for the both sets of changes to be compatible with each other.
-If the same copy if the project is being updated with both sets of changes then the project may not work correctly or even compile
+1. If two people people are making (long running) changes to the project it may take some time for the both sets of changes to be compatible with each other
+If the same copy of the project is being updated with both sets of changes then the project may not work correctly or even compile
 
-There are three core things a VCS helps do:
+There are three important things a VCS helps do:
 
-1. Answer the following questions: "What changes were made in the past?", "Why were they made?" and "Who made them?" (via commit history and commit comments)
+1. Answer the following questions: "What changes were made in the past?", "Why were they made?" and "Who made them?" (using the commit history and commit comments)
 1. Individual developers find this information useful as part of their daily workflow and
 it also helps organisations with their compliance and audit management
 1. Undo a half complete or incorrect change made in error and "roll back" to a previous version
 1. Recreate a "snapshot" of the project as it was at some point in the past
-1. Allow two streams of changes to be made independently of each other and then integrated at a later date (parallel development).
+1. Allow two streams of changes to be made independently of each other and then integrated at a later date (parallel development)
 This feature depends on the specific features of the VCS tool you are using
 
 You may find the following additional reading useful in introducing important ideas: <http://tom.preston-werner.com/2009/05/19/the-git-parable.html>
