@@ -159,22 +159,21 @@ it is fun, and it shows how to use Markdown in comments.
 Add a comment to your pull request using Markdown. The format for
 adding an image is:
 
-    ![image alt text](http://example.com/url-to-funny-pic.jpg)
+    ![image alt text](http://example.com/url-to-funny-pic.jpg "image title text")
 
 The "image alt text" is the text that is displayed when the image
 fails to load, or if the person is using a screen reader (yes, there
-are blind programmers!). So maybe try to come up with a long-winded
-in-depth analysis of what is happening in the image. For example: 
+are blind programmers!). The "image title text" is displayed when you
+hover over the image. For example: 
 
-	![A cat, wearing a business suit, is sitting a table with a newspaper in hand. Looking up, the cat ponders: "I should buy GitHub".](http://i.qkme.me/3rgytr.jpg)
+	![A pondering cat](http://i.qkme.me/3rgytr.jpg "A cat, wearing a business suit, is sitting a table with a newspaper in hand. Looking up, the cat ponders: 'I should buy GitHub'.")
 
 becomes:
 
-![A cat, wearing a business suit, is sitting a table with a newspaper in hand. Looking up, the cat ponders: "I should buy GitHub".](http://i.qkme.me/3rgytr.jpg)
+![A pondering cat](http://i.qkme.me/3rgytr.jpg "A cat, wearing a business suit, is sitting a table with a newspaper in hand. Looking up, the cat ponders: 'I should buy GitHub'.")
 
-Sure, it's highly unlikely that anybody will ever read your
-alt-text. But one day, maybe, someone will have a chuckle
-at it.
+Always make sure your title text is informative and witty. That way you
+will garner more chuckles out of those who happen to purview it.
 
 # Upstream changes
 
