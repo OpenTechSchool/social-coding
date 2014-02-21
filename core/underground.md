@@ -89,9 +89,8 @@ learning.
 
 In HTML, you might write something like this:
 
-{% highlight html %}<h1>This is a large heading</h1> 
-<p>This is a paragraph with <em>emphasis</em> and <strong>strong</strong> text.</p>
-{% endhighlight %}
+    <h1>This is a large heading</h1>
+    <p>This is a paragraph with <em>emphasis</em> and <strong>strong</strong> text.</p>
 
 In Markdown this is much simpler:
 
@@ -105,7 +104,7 @@ You will end up with:
 > 
 > This is a paragraph with *emphasis* and **strong** text.
 
-One caveat is that you need to put a blank line between 
+One caveat is that you need to put a blank line between
 paragraphs. Otherwise it will just lump all your text together.
 
 # Think Globally, Commit Locally
