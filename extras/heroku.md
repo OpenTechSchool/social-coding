@@ -51,7 +51,7 @@ Well... almost, but we still need to do a few things. Heroku plays nice with mos
     require 'sinatra'
 
     get '/' do
-      "Hello, world"
+      "Hi there, World!"
     end
 
 Yep, that's our webapp ^^
@@ -63,7 +63,8 @@ Okay, so this is the only bit which can get a bit bothersome, so just take your 
 All your app dependencies (e.g. Ruby gems) should be documented in a `Gemfile`, e.g:
 
     source :rubygems
-    gem 'sinatra', '1.1.4'
+    
+    gem 'sinatra', '1.4.4'
     gem 'thin'
 
 So double check that's the case, and then type:
