@@ -12,12 +12,10 @@ this experience is to check whether you've committed all changes. The easiest
 way to see this is to run `git status` in the working directory. The 
 output should look similar to the following.
 
-{% highlight sh %}
-$ cd ~/myfirstrepo
-$ git status
-# On branch master
-nothing to commit (working directory clean)
-{% endhighlight %}
+    $ cd ~/myfirstrepo
+    $ git status
+    # On branch master
+    nothing to commit (working directory clean)
 
 If you have untracked or modified files you should definitely take care 
 of those before continuing. Please refer to the 
@@ -35,20 +33,16 @@ That is important! The following command will also omit other hidden files.
 Be sure to navigate into the correct directory before running the remove 
 command.
 
-{% highlight sh %}
-$ cd ~/myfirstrepo
-$ rm -rf **/*
-sure you want to delete all the files in ~/myfirstrepo/** [yn]? y
-{% endhighlight %}
+    $ cd ~/myfirstrepo
+    $ rm -rf **/*
+    sure you want to delete all the files in ~/myfirstrepo/** [yn]? y
 
 You can immediately check to see what happens by listing the contents of the directory.
 
-{% highlight sh %}
-$ ls -1a
-.
-..
-.git
-{% endhighlight %}
+    $ ls -la
+    .
+    ..
+    .git
 
 As you can see all that is left are the `.git/` folder and the `.gitignore` file. Congratulations! You successfully deleted all the work you have put into this project. :-)
 
@@ -58,9 +52,7 @@ As you can see all that is left are the `.git/` folder and the `.gitignore` file
 
 So how can you get back all the files and folders which you created in hours of work? It is very easy and fast forward. One command will recover them. Please mind the `.` following after `git checkout` which points to the current directory.
 
-{% highlight sh %}
-$ git checkout .
-{% endhighlight %}
+    $ git checkout .
 
 Since there will be no output following to the command you need to check yourself whether your work has been restored successfully. A directory listing using `ls -1a` should satisfy you.
 

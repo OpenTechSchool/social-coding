@@ -192,44 +192,32 @@ completely overwritten all your changes and added a curse for your
 pets in the README file. Let's add another upstream to see what is
 happening:
 
-{% highlight sh %}
-$ git remote add upstream https://github.com/OpenTechSchool/underground
-{% endhighlight %}
+    $ git remote add upstream https://github.com/OpenTechSchool/underground
 
 This adds an upstream repository called `upstream`. Now we can
 `fetch` directly from the Oligarchs. This will download the
 `OpenTechSchool/underground` repository and store it under
 the name `upstream`, so it won't interfere with your changes:
 
-{% highlight sh %}
-$ git fetch upstream
-{% endhighlight %}
+    $ git fetch upstream
 
 If you want to bring the changes into your work, use `merge`:
 
-{% highlight sh %}
-$ git merge upstream/master
-{% endhighlight %}
+    $ git merge upstream/master
 
 You might want to have a look at the changes it brought, by typing :
 
-{% highlight sh %}
-$ git log
-{% endhighlight %}
+    $ git log
 
 This lists all the commits from the most recent one. 
 `git log` has lots of options, but you might find it more entertaining
 not learning them and use the ugly but very informative:
 
-{% highlight sh %}
-$ gitk
-{% endhighlight %}
+    $ gitk
 
 Now bear in mind, your GitHub repository doesn't know about these
 changes yet, so you'll need to `push` to get it up-to-date:
 
-{% highlight sh %}
-$ git push
-{% endhighlight %}
+    $ git push
 
 And that's it! You're done!

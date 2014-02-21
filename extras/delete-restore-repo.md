@@ -13,25 +13,21 @@ This exercise is similar to the [delete-restore scenario](delete-restore.html) b
 
 A good way to check the status both of the local and the remote repository is to review the last commit in the history. In order to guarantee that you know about all changes that might have happened in the remote repository run `git fetch` before reviewing the commit history. The command will retrieve the current state from the remote repository without affecting any local changes. After having done so you can output the message of the last commit as follows.
 
-{% highlight sh %}
-$ git log -1
-commit ca79e1c5fc081552a96a176275730b5f8cfd3363
-Author: Tobias Preuss <tobias@opentechschool.org>
-Date:   Sat Oct 20 15:06:07 2012 +0200
+    $ git log -1
+    commit ca79e1c5fc081552a96a176275730b5f8cfd3363
+    Author: Tobias Preuss <tobias@opentechschool.org>
+    Date:   Sat Oct 20 15:06:07 2012 +0200
 
-    Added delete-restore scenario.
-{% endhighlight %}
+        Added delete-restore scenario.
 
 The parameter `-1` limits the output to the last commit. The remote repository aliased as `origin` can be inspected as follows.
 
-{% highlight sh %}
-$ git log -1 origin
-commit d5630aec495d6a176275730b5f8cfd3114cb52a9
-Author: Steven Farlie <steven.farlie@gmail.com>
-Date:   Sat Oct 20 14:50:27 2012 +0200
+    $ git log -1 origin
+    commit d5630aec495d6a176275730b5f8cfd3114cb52a9
+    Author: Steven Farlie <steven.farlie@gmail.com>
+    Date:   Sat Oct 20 14:50:27 2012 +0200
 
-    Added chapter on Berlin.
-{% endhighlight %}
+        Added chapter on Berlin.
 
 If the commits deviate from each other as in the above examples you should definitely `push` your local commits to the remote repository before continuing.
 
@@ -39,10 +35,8 @@ If the commits deviate from each other as in the above examples you should defin
 
 When you verfied that everything is synchronized and no files are left untracked or have changes you should hazard to delete the repository. We will simply remove the entire folder which contains the `.git/` folder and everything else.
 
-{% highlight sh %}
-$ cd ~
-$ rm -rf myfirstrepo
-{% endhighlight %}
+    $ cd ~
+    $ rm -rf myfirstrepo
 
 ![Relaxed looking cat stating: When I panic I make this face](../images/panic_cat.jpg)
 
@@ -50,18 +44,14 @@ $ rm -rf myfirstrepo
 
 I imagine you are a bit nervous after having deleted all work. Don't worry, there is an easy way to restore everything what you've done before. In order to do so you need to find out about the address of the remote repository. GitHub shows the address right at the top of the repository listing. You can choose between `HTTP`, `SSH` and `Git Read-only`. The favored transfer method is `SSH`. Copy the address and then run the following command in your home directory.
 
-{% highlight sh %}
-$ cd
-$ git clone git@github.com:johndoe/myfirstrepo.git .
-{% endhighlight %}
+    $ cd
+    $ git clone git@github.com:johndoe/myfirstrepo.git .
 
 This command will create a directory named `myfirstrepo`, copy the `.git/` folder and checkout all files for you. It will further link the remote repository to your local copy.
 
 Please check the contents of the newly created folder.
 
-{% highlight sh %}
-$ ls -1a myfirstrepo
-{% endhighlight %}
+    $ ls -1a myfirstrepo
 
 All files and folders should be back.
 

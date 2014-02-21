@@ -38,9 +38,9 @@ Referred to as the 'Heroku Toolbelt', it has all the client-side code-magic to e
 
 ### Login to the Heroku Client
 From your terminal, type :
-{% highlight sh %}
-$ heroku login 
-{% endhighlight %}
+
+    $ heroku login
+
 and then follow the prompts to enter your email, password and SSH key (it should automatically detect the one you created for GitHub).
 
 You're basically now ready to deploy your app to Heroku, so make sure you are in your app's directory and get ready for some magic.
@@ -48,13 +48,11 @@ You're basically now ready to deploy your app to Heroku, so make sure you are in
 ### Cast spell?
 Well... almost, but we still need to do a few things. Heroku plays nice with most of the popular frameworks, so we'll just pick a [Ruby](https://devcenter.heroku.com/articles/ruby) based framework (e.g. [Sinatra](http://www.sinatrarb.com)) to illustrate how to deploy your app. We'll use a super barebone application called `app.rb` for our example, but you should use your existing web app and choose the appropriate parameters:
 
-{% highlight ruby %}
-require 'sinatra'
+    require 'sinatra'
 
-get '/' do
-  "Hello, world"
-end
-{% endhighlight %}
+    get '/' do
+      "Hello, world"
+    end
 
 Yep, that's our webapp ^^
 
@@ -64,17 +62,13 @@ Okay, so this is the only bit which can get a bit bothersome, so just take your 
 ### Gemfile
 All your app dependencies (e.g. Ruby gems) should be documented in a `Gemfile`, e.g:
 
-{% highlight ruby %}
-source :rubygems
-gem 'sinatra', '1.1.0'
-gem 'thin'
-{% endhighlight %}
+    source :rubygems
+    gem 'sinatra', '1.1.4'
+    gem 'thin'
 
 So double check that's the case, and then type:
 
-{% highlight sh %}
-$ bundle install
-{% endhighlight %}
+    $ bundle install
 
 This will enable Heroku to automatically re-create the environment you are using with all the required dependencies using [bundler](http://gembundler.com/).
 
@@ -87,20 +81,14 @@ A rackup file `config.ru` that says two things:
 * The name of the main app: `app.rb` (but don't add the `.rb` extension.)
 * And the command to start the Rack server
 
-{% highlight ruby %}
-//putting the './' in front of the app name is SUPER CRITICAL
-//assume the server has no clue where his root is and where to find the file
-
-require './app'
-run Sinatra::Application
-
-{% endhighlight %}
+    //putting the './' in front of the app name is SUPER CRITICAL
+    //assume the server has no clue where his root is and where to find the file
+    require './app'
+    run Sinatra::Application
 
 For the sake of completeness, you should also add a `Procfile.txt` in your root folder with the following instruction:
 
-{% highlight ruby %}
-web: bundle exec rackup config.ru -p $PORT
-{% endhighlight %}
+    web: bundle exec rackup config.ru -p $PORT
 
 Replacing `$PORT` with the port the app server listens to. But in a strict Sinatra application you can omit all of this, it gets it by default.
 
@@ -108,9 +96,8 @@ Replacing `$PORT` with the port the app server listens to. But in a strict Sinat
 This is our final preparation step. A Heroku app is basically a Git remote repository coupled with a URL where your application will be visible to the world.
 
 Run:
-{% highlight sh %}
-$ heroku create
-{% endhighlight %}
+
+    $ heroku create
 
 This will create a Heroku app with a rather formidable name such as `blazing-comet-9984.herokuapp.com` (we'll see later how to rename it to a more digestible format).
 
@@ -118,15 +105,15 @@ You're all set. You've prepared all the files Heroku needs in order to handle yo
 
 ## Cast Spell!
 First, push your code to the Heroku remote
-{% highlight sh %}
-$ git push heroku master
-{% endhighlight %}
+
+    $ git push heroku master
+
 Notice that it's like pushing to GitHub, except it has the `heroku` word in there.
 
 And then, you can simply open your browser and point to your app with one nifty command line:
-{% highlight sh %}
-$ heroku open
-{% endhighlight %}
+
+    $ heroku open
+
 Which will open your default browser and point to `http://blazing-comet-99814.herokuapp.com`
 
 And that's it! From now on, every time you want to push an update to your hosting server, just use `$ git push heroku master`.
@@ -136,9 +123,7 @@ Clearly `http://blazing-comet-99814.herokuapp.com` is not the most user friendly
 
 Make sure you are in your app's root directory and type:
 
-{% highlight sh %}
-heroku apps:rename newname
-{% endhighlight %}
+    heroku apps:rename newname
 
 Replacing `newname` with the name you want. And, voila, you can now access your app at `http://newname.herokuapp.com`
 
