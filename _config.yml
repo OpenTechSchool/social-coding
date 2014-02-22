@@ -16,7 +16,7 @@ map:
      - title: Social coding in the underground
        path: /core/underground.html
        caption: Learn to plot with others :>
- - title: Extras
+ - title: Extras
    caption: Additional workshop content
    subpages:
    - title: Exploring Github
@@ -25,7 +25,7 @@ map:
      path: /extras/wikis.html
    - title: Sharing code quickly with gists
      path: /extras/gists.html
-   - title: Hosting websites with Github!
+   - title: Hosting websites with Github
      path: /extras/pages.html
    - title: Losing and finding your files
      path: /extras/delete-restore.html
