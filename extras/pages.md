@@ -33,7 +33,9 @@ Create a blank repository. Any name will do. We'll use
 
 ![Create repo page](images/pages/generator-1-small.png)
 
-Then go to the *Admin* tab.
+Then go to the *Settings* tab (in the list of buttons on the right, 
+the old name was "Admin" - these screenshots are slightly out of 
+date.)
 
 ![GitHub pages button](images/pages/generator-2-small.png)
 

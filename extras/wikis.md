@@ -23,7 +23,7 @@ receive any notifications to changes that others make to your
 wiki.
 
 You can enable your repository wiki using the GitHub web interface, in
-the *Admin* tab of your repository.
+the *Settings* tab of your repository (in the list of buttons on the right.)
 
 ## Bonus
 
