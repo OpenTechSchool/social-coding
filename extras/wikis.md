@@ -31,4 +31,4 @@ A GitHub wiki is also a Git repository. So you can have a local copy
 of everything, and even make wiki changes locally before pushing them
 to GitHub. To clone it, add a ``.wiki`` to the url, like so:
 
-    $ git clone https://github.com/defunkt/resque.wiki.git
+    $ git clone https://github.com/OpenTechSchool/underground.wiki.git
