@@ -82,6 +82,8 @@ A rackup file `config.ru` that says two things:
 * The name of the main app: `app.rb` (but don't add the `.rb` extension.)
 * And the command to start the Rack server
 
+Check it out: 
+
     //putting the './' in front of the app name is SUPER CRITICAL
     //assume the server has no clue where his root is and where to find the file
     require './app'
