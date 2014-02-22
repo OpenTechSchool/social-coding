@@ -29,6 +29,8 @@ The parameter `-1` limits the output to the last commit. The remote repository a
 
         Added chapter on Berlin.
 
+If the command above doesn't work, you may need to specify a branch name to go with the remote name. Try `git log -1 origin/master`, which means "the branch called master on the remote called origin".
+
 If the commits deviate from each other as in the above examples you should definitely `push` your local commits to the remote repository before continuing.
 
 ## Delete all content and the repository
