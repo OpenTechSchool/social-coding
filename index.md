@@ -53,7 +53,7 @@ you want to share your source code and contribute to other projects.
 * [Social coding with the Underground](core/underground.html) - Contributing to the New (Social) World Order.
 
 # Extra fun stuff
-
+* [Learn Git Branching](https://pcottle.github.io/learnGitBranching/) An interactive tutorial to more of the features of Git
 * [GitHub Explore](extras/exploring.html)
 * [GitHub Wikis](extras/wikis.html)
 * [Code snippets with Gist](extras/gists.html)
