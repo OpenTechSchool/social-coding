@@ -7,16 +7,16 @@ map:
  - title: Core
    caption: The 'mandatory' workshop content
    subpages:
-     - title: Setting up Git & Github
+     - title: "Setting up Git & Github"
        path: /core/setup.html
-       caption: What you need to configure, signup to and install!
+       caption: "What you need to configure, signup to and install!"
      - title: Your first repository!
        path: /core/first-repo.html
        caption: Dip your toes into the slightly revisionist world of git
      - title: Social coding in the underground
        path: /core/underground.html
        caption: Learn to plot with others :>
- - title: Extras
+ - title: Extras
    caption: Additional workshop content
    subpages:
    - title: Exploring Github
