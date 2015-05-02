@@ -48,6 +48,7 @@ you want to share your source code and contribute to other projects.
 
 # The course
 
+* [Version Control Basics](core/version_control_basics.html) - What is a version control tool and why is it useful.
 * [Setting up](core/setup.html) - Installation instructions for Windows, OSX and Linux.
 * [Your first repository](core/first-repo.html) - Create a git repository on your laptop and share it on GitHub.
 * [Social coding with the Underground](core/underground.html) - Contributing to the New (Social) World Order.
